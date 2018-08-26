@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <title>Sushi Time!</title>
+
+    {{!-- logo font --}}
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    {{!-- font awesome icons --}}
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+  </head>
+  <body>
+    {{{ body }}}
+  </body>
+
+  <script src="/assets/js/main.js"></script>
+
+  <script type="text/javascript">
+  $(window).scroll(function(){
+      $(".cool-header").css("top",Math.max(0,50-$(this).scrollTop()));
+  });
+</script>
+
+</html>

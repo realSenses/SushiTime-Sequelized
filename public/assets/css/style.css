@@ -1,0 +1,195 @@
+body {
+  font-family: 'Permanent Marker', cursive;
+  background: #30E8BF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+ }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
+
+#top, #bottom, #left, #right {
+  background: #ffffff;
+  position: fixed;
+  z-index: 2; }
+
+#left, #right {
+  top: 0;
+  bottom: 0;
+  width: 20px; }
+
+#left {
+  left: 0; }
+
+#right {
+  right: 0; }
+
+#top, #bottom {
+  left: 0;
+  right: 0; }
+
+#top {
+  top: 0;
+  height: 165px; 
+}
+
+#bottom {
+  bottom: 0;
+  height: 20px; }
+
+.add-sushi {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  width: 50%; }
+
+#customer {
+  width: 100px;
+  padding-left: 12px;
+  box-sizing: border-box;
+  border: none;
+  border-right: 0;
+  height: 45px;
+  float: right;
+  font-size: 15px;
+  border: 2px solid #FE8235;
+  border-right: 0px; }
+#customer::-webkit-input-placeholder {
+  color: #d9d9d9; }
+#customer:-moz-placeholder {
+  color: #d9d9d9; }
+#customer::-moz-placeholder {
+  color: #d9d9d9; }
+#customer:-ms-input-placeholder {
+  color: #d9d9d9; }
+  
+.customer-display {
+  background-color: #32E7BE;
+  width: 100px;
+  padding-left: 12px;
+  box-sizing: border-box;
+  border: none;
+  border-right: 0;
+  height: 45px;
+  float: right;
+  font-size: 15px;
+  color: #fff;
+  padding-top: 15px; }
+  
+
+#name {
+  width: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 0.01em solid #d9d9d9;
+  border-right: 0;
+  height: 40px;
+  float: right;
+  font-size: 15px; }
+
+#sushiCat {
+padding-left:33%;
+width:12%;
+
+}
+
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 55px;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  color: #232526;  /* fallback for old browsers */
+  color: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+button[type=submit] {
+  background-color: #232526;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  float: right;
+  font-size: 15px; }
+  button[type=submit] p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  button[type=submit]:hover {
+    background-color: #414345; }
+
+.container {
+  width: calc(100% - 30px);
+  margin: 165px auto;
+  max-width: 750px; }
+
+.panel {
+  float: left;
+  width: 50%; }
+
+main .panel {
+  padding-bottom: 500px;
+  padding-top: 85px; }
+
+.panel-title {
+  width: 250px;
+  margin: 25px auto 8px auto;
+  font-size: 18px; }
+
+.sushi {
+  background: #ffffff;
+  width: 320px;
+  margin: 8px auto;
+  height: 45px;
+  overflow: hidden; }
+
+.sushi-title {
+  float: left;
+  padding-left: 16px;
+  font-size: 15px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.sushi-button {
+  background: #232526;
+  height: 100%;
+  width: 50px;
+  float: right;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff; }
+  .sushi-button:hover {
+    background: #414345; }
+  .sushi-button p, .sushi-button .icon {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.cool-header {
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  color: #414345;
+  background: #30E8BF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+  height: 200px;
+  z-index: 1;
+  display: flex; }
+  .cool-header h3 {
+    align-self: flex-end;
+    width: 250px;
+    color: #404040;
+    font-size: 18px;
+    margin: 0px auto;
+    height: 35px;
+    box-sizing: border-box;
+    padding-top: 10px; }

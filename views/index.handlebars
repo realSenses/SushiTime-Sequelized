@@ -1,0 +1,65 @@
+<div id="left"></div>
+<div id="right"></div>
+<div id="bottom"></div>
+
+<header id="top">
+  <img id="sushiCat" src="/assets/img/sushiCat.png">
+  <h2>Sushi Time!</h2>
+  <form class="add-sushi">
+    <button type="submit"><img src="/assets/img/sushi.svg" width="35px"></img></button>
+    <div class="form-group">
+      <input type="text" id="name" name="name" placeholder="Add sushi..." />
+    </div>
+  </form>
+</header>
+
+<nav class="cool-header">
+  <div class="container">
+    <div class="panel">
+      <h3>Eat Me!</h3>
+    </div>
+    <div class="panel">
+      <h3>sushis eaten!</h3>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+
+  <div class="panel">
+    {{#each sushis}}
+      {{#unless eaten}}
+        <div class="sushi">
+          <div class="sushi-title">
+            <p>{{this.sushi_name}}</p>
+          </div>
+          <div data-id="{{this.id}}" class="sushi-button eatSushi"><p>EAT</p></div>
+          <div class="customer-form">
+            <input type="text" id="customer" name="customer" placeholder="Customer" />
+          </div>
+        </div>
+      {{/unless}}
+    {{/each}}
+  </div>
+
+  <div class="panel">
+    {{#each sushis}}
+      {{#if eaten}}
+        <div class="sushi">
+          <div class="sushi-title">
+            <p>{{this.sushi_name}}</p>
+          </div>
+
+          
+
+          <div data-id="{{this.id}}" class="sushi-button deleteSushi">
+            <div class="icon"><i class="far fa-trash-alt"></i></div>
+          </div>
+          <div class="customer-display">{{this.Customer.name}}</div>
+
+        </div>
+      {{/if}}
+    {{/each}}
+  </div>
+  
+</main>
